@@ -1,23 +1,49 @@
----
-layout: default
-title: Fang-Yi Yu's personal website
----
-<div class="blurb">
-<h1>Fang-Yi Yu</h1>
-
-<p>I am a third year PhD student in the Computer Science and Engineering Division at the <a href="http://www.umich.edu/">University of Michigan</a> advised by <a href="http://web.eecs.umich.edu/~schoeneb/" >Grant Schoenebeck.</a></p>
-
-<h2>Research Interests</h2>
-
-<p>Theoretical computer science, the intersection of computer science and social networks, the intersection of computer science and economics</p>
-
-<h2>Publications</h2>
-	<p><strong><a href="papers/ComplexSybil.html">Sybil Detection Using Latent Network Structure</a></strong><br>
-	Schoenebeck, Grant, Aaron Snook, and Fang-Yi Yu.<br>
-	Proceedings of the 2016 ACM Conference on Economics and Computation. ACM, 2016.<br></p>
-	
-	
-	<p><strong><a href="papers/GenThreshonPA.html">General Threshold Model for Social Cascades: Analysis and Simulations</a></strong><br>
-	Gao, Jie, Golnaz Ghasemiesfeh, Grant Schoenebeck, and Fang-Yi Yu. <br>
-Proceedings of the 2016 ACM Conference on Economics and Computation. ACM, 2016.<br></p>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>Fang-Yi Yu</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="content">
+    <section>
+      <h1 class="title">Fang-Yi Yu</h1>
+     <p>I am a third year PhD student in the Computer Science and Engineering Division at the <a href="http://www.umich.edu/">University of Michigan</a> advised by <a href="http://web.eecs.umich.edu/~schoeneb/" >Grant Schoenebeck.</a></p>
+      <p><a href="mailto:fayu@umich.edu">[Email]</a> </p>
+</section>
+  <section>
+    <h2>Research Interests</h2>
+    <p>Theoretical computer science, the intersection of computer science and social networks, the intersection of computer science and economics</p>
+  </section>
+    <section>
+      <h2>Publications </h2>
+      <ul class="pub-list">
+        <li><p><strong><a href="papers/ComplexSybil.html">Sybil Detection Using Latent Network Structure</a></strong><br>
+  Schoenebeck, Grant, Aaron Snook, and Fang-Yi Yu.<br>
+  Proceedings of the 2016 ACM Conference on Economics and Computation. ACM, 2016.<br></p></li>
+  <li>
+      <p><strong><a href="papers/GenThreshonPA.html">General Threshold Model for Social Cascades: Analysis and Simulations</a></strong><br>
+    Gao, Jie, Golnaz Ghasemiesfeh, Grant Schoenebeck, and Fang-Yi Yu. <br>
+    Proceedings of the 2016 ACM Conference on Economics and Computation. ACM, 2016.<br></p></li>
+      </ul>
+    </section>
+  </div>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <script src="canvas-mail-2.0.min.js"></script>
+  <script>
+   $(function() {
+       /* WebFont email render must be made after the font is loaded
+          This is accomplished with the WebFont loader. */
+       WebFont.load({
+           google: { families: [ 'Open Sans' ] },
+           active: function() {
+               $(".mail").canvas_mail("chansool", "umich.edu");
+           }
+       });          
+   });
+  </script>
+</body>
+</html>
