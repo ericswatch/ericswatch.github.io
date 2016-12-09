@@ -56,8 +56,6 @@ section {
 
 .pub-list {
     padding: 0;
-    list-style-type: none;
-    border-bottom: 1px solid #041E42;
 }
 
 .pub-list p {
