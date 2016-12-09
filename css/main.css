@@ -55,6 +55,7 @@ section {
 }
 
 .pub-list {
+    list-style-type: none;
     padding: 0;
 }
 
