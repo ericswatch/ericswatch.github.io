@@ -35,7 +35,26 @@
 	a:hover {
 	color: #FFCC33;
 	}
-	
+	table {
+	  width: 100%;
+	}
+	th, td {  
+		padding: 0.3em;
+		padding-bottom: 0.3em;
+	}
+	th.author {
+	  width: 30%; 
+	  vertical-align: top;
+	}
+	th.title, {
+		width: 45%; 
+	  vertical-align: top;
+	}
+	th.dl, th.id {
+	  width: 5%; 
+  	font-weight: bold;
+	}
+
 	.content {
 	margin-left: auto;
 	margin-right: auto;
